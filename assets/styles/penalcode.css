@@ -1,0 +1,15 @@
+/* penalcode.css - Specific styling for the penal code document */
+.penal-code {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.penal-code h1 {
+    color: #333;
+}
+
+.penal-code p {
+    font-size: 1rem;
+    color: #666;
+}

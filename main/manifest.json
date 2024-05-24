@@ -1,0 +1,16 @@
+{
+    "short_name": "LIFE RP",
+    "name": "LIFE RP Community Hub",
+    "icons": [
+        {
+            "src": "../assets/images/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ],
+    "start_url": "index.html",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000"
+}
