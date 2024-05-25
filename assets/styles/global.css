@@ -4,6 +4,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333; /* default text color */
+    font-size: 1rem; /* default font size */
 }
 
 /* Container Styles */
@@ -52,12 +57,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 footer {
+    padding-bottom: 0;
     background-color: #333;
     color: white;
-    padding: 1rem;
+    padding: 0.1rem;
     text-align: center;
+    margin-top: auto;
 }
+
 
 .fullimg {
     height: 100vh;
