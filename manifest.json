@@ -3,12 +3,12 @@
     "name": "LIFE RP Community Hub",
     "icons": [
         {
-            "src": "../assets/images/favicon.svg",
+            "src": "./assets/images/favicon.svg",
             "sizes": "any",
             "type": "image/svg+xml"
         }
     ],
-    "start_url": "index.html",
+    "start_url": "./main/index.html",
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",

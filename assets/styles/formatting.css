@@ -157,3 +157,17 @@ b, strong {
   time {
     font-style: italic;
   }  
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  ul ul {
+    list-style-type: circle;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }

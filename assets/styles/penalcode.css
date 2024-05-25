@@ -1,79 +1,39 @@
-/* Main document styles */
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 0.6rem;
-    display: flex;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space between logo and nav */
-    align-items: center;
-    /* Center items vertically */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* Align nav items in a row */
-    align-items: center;
-    /* Center items vertically */
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-
-h1 {
-    text-align: center;
-}
-
-hr {
-    margin-bottom: 20px;
-}
-
-/* Offense Categories */
+/* Offense Categories table */
 .offense-categories {
-    list-style-type: none;
-    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.offense-categories li {
-    margin-bottom: 5px;
+.offense-categories th,
+.offense-categories td {
+    border: 1px solid #0f0f0f;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
 }
 
-/* Terms & Definitions */
+.offense-categories th {
+    background-color: #f2f2f2;
+}
+
+
+/* Terms & Definitions table */
 .terms-definitions {
-    margin-left: 20px
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.terms-definitions dt {
-    font-weight: bold;
+.terms-definitions th,
+.terms-definitions td {
+    border: 1px solid #0f0f0f;
+    padding: 8px;
+    text-align: left;
 }
 
-dd {
-    display: block;
-    margin-inline-start: 40px;
-    unicode-bidi: isolate;
-    margin-bottom: 5px;
+.terms-definitions th {
+    background-color: #f2f2f2;
 }
 
 /* Offenses table */
@@ -84,7 +44,7 @@ dd {
 
 .offenses th,
 .offenses td {
-    border: 1px solid #ddd;
+    border: 1px solid #0f0f0f;
     padding: 8px;
     text-align: left;
 }

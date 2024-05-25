@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space between logo and nav */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.pagehead {
+    font-size: 25px;
+    margin: -35px;
+    display: flex;
+    /* Use flexbox to align */
+    justify-content: center;
+    /* Center horizontally */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Align nav items in a row */
+    align-items: center;
+    /* Center items vertically */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.fullimg {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.halfimg {
+    height: 50vh;
+    object-fit: cover;
+}
+
+.quarterimg {
+    height: 25vh;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
+}
