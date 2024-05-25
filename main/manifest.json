@@ -1,6 +1,6 @@
 {
-    "short_name": "Redirect",
-    "name": "Redirecting to Home",
+    "short_name": "LIFE RP",
+    "name": "LIFE RP Community Hub",
     "icons": [
         {
             "src": "./assets/images/favicon.svg",
@@ -8,7 +8,7 @@
             "type": "image/svg+xml"
         }
     ],
-    "start_url": "./index.html",
+    "start_url": "./main/index.html",
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
