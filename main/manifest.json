@@ -1,12 +1,12 @@
 {
     "short_name": "LIFE RP",
     "name": "LIFE RP Community Hub",
-    "short description": "",
-    "long description": "",
+    "short description": "This is a website for the LIFE Discord server and LIFE NYC role-play.",
+    "long description": "Embark on a thrilling journey into a dynamic virtual realm, where your wildest dreams come to life. Immerse yourself in a world of boundless possibilities, crafting unforgettable narratives at every turn. Join the vibrant LifeRP community, tailor-made for streamers, and captivate a dedicated audience with your unparalleled roleplaying skills. Feel the exhilaration of living a second life like never before. Don’t miss out on this extraordinary adventure – unlock the gateway to limitless experiences now!",
     "lang": "en",
     "icons": [
         {
-            "src": "./assets/images/favicon.svg",
+            "src": "../assets/images/logo.png",
             "sizes": "any",
             "type": "image/svg+xml"
         }
