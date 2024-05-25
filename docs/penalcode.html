@@ -1,16 +1,2425 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Penal Code - LIFE RP</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
     <link rel="stylesheet" href="../assets/styles/penalcode.css">
+    <link rel="stylesheet" href="../assets/styles/popup.css">
+    <script src="../assets/scripts/popup.js"></script>
 </head>
+
 <body>
-    <div class="penal-code">
-        <h1>Penal Code</h1>
-        <p>
-            <!-- Penal code content goes here -->
-        </p>
-    </div>
+    <header>
+        <div class="logo-container">
+            <img src="../assets/images/logo.png" alt="LIFE RP Logo" height="50" width="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../main/index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>LIFE NYC Penal Code</h1>
+    <hr>
+
+    <!-- Criminal Offense Categories -->
+    <h2>Criminal Offense Categories</h2>
+    <ul class="offense-categories">
+        <li><strong>Type 1:</strong> Offenses against a Person</li>
+        <li><strong>Type 2:</strong> Offenses involving Theft </li>
+        <li><strong>Type 3:</strong> Offenses involving Fraud</li>
+        <li><strong>Type 4:</strong> Offenses involving Damage to a Property</li>
+        <li><strong>Type 5:</strong> Offenses Against Public Administration</li>
+        <li><strong>Type 6:</strong> Offenses Against Public Order</li>
+        <li><strong>Type 7:</strong> Offenses Against Health and Morals</li>
+        <li><strong>Type 8:</strong> Offenses Against Public Safety</li>
+        <li><strong>Type 9:</strong> Offenses Involving the Operation of a Vehicle</li>
+        <li><strong>Type 10:</strong> Offenses Involving the Well-Being of Wildlife</li>
+    </ul>
+
+    <!-- Terms & Definitions -->
+    <h2>Terms & Definitions</h2>
+    <dl class="terms-definitions">
+        <dt><strong>Time:</strong></dt>
+        <dd>1 month In City = 1 Minute IRL, 1 Year In City = 1 Day IRL (12 months DO NOT EQUAL 1 year). 300 Month Max
+            Sentence</dd>
+        <dt><strong>Class 1 Substances:</strong></dt>
+        <dd>Marijuana (Legal up to 10 Grams), Codeine</dd>
+        <dt><strong>Class 2 Substances:</strong></dt>
+        <dd>Meth, LSD, XTC, and all other drugs</dd>
+        <dt><strong>Prescription:</strong></dt>
+        <dd>An Rx document issued by a registered Doctor to a civilian authorizing the medical use of up to 10 units of
+            an otherwise-restricted Class 1 substance for medicinal purposes.</dd>
+        <dt><strong>Public Servant:</strong></dt>
+        <dd>A person who is nominated, appointed, or elected to a position of public office, such as a Judge, a District
+            Attorney or Assistant District Attorney, a Peace Officer, a Medical professional and other similar positions
+            whose primary function is service to the public.</dd>
+        <dt><strong>Peace Officer:</strong></dt>
+        <dd>Any person who works for any police department (SASP, BCSO, LSPD, FIB, or a US Marshal)</dd>
+        <dt><strong>Conspiracy:</strong></dt>
+        <dd>Agreement with one or more people to commit a crime, with one or more people committing that the act in
+            furtherance of that agreement</dd>
+        <dt><strong>Extortion:</strong></dt>
+        <dd>The unlawful exaction of money or property through the threat (or actual) intimidation or violence</dd>
+        <dt><strong>Class 1 Weapon:</strong></dt>
+        <dd>Single fired weapons (Non-Automatic) with or without attachments</dd>
+        <dt><strong>Class 2 Weapon:</strong></dt>
+        <dd>Highly powered single fired weapons (Non-Automatic) with or without attachments</dd>
+        <dt><strong>Class 3 Weapon:</strong></dt>
+        <dd>Automatically fired weapons, Shotguns, Sniper Rifles, or Explosives - with or without attachments</dd>
+        <dt><strong>Government Property:</strong></dt>
+        <dd>Any property issued to a public servant by the government, or any facility owned by the Government
+            (Hospital, PD, Courthouse etc.)</dd>
+        <dt><strong>Racketeering:</strong></dt>
+        <dd>The act of acquiring a business through illegal activity, operating a business with illegally-derived
+            income, or using a business to commit illegal acts.</dd>
+        <dt><strong>Aiding & Abetting:</strong></dt>
+        <dd>Anyone who helps in the commission of a crime shall be charged with the appropriate violations as everyone
+            else participating in the commission of the crime.</dd>
+        <dt><strong>Speed Limits:</strong></dt>
+        <dd>Speed limits are 80MPH on Highways, and 50MPH in all other areas.</dd>
+        <dt><strong>Court:</strong></dt>
+        <dd>Hold the criminal defendant until trial; defendants lawyer may arrange a bail bond via the District
+            Attorney's office.</dd>
+        <dt><strong>Not Guilty Plea:</strong></dt>
+        <dd>Entering a Not Guilty plea in the cells means that the defendant DOES NOT accept the charges and sentencing.
+            Entering this plea means that both parties must attempt to contact a judge for summary judgment or accept
+            preliminary charges until a Court date can be scheduled.</dd>
+        <dt><strong>Lawyer Calls:</strong></dt>
+        <dd>Suspects who are being charged with greater than 200 months shall have a lawyer requested for their
+            representation by peace officers.</dd>
+        <dt><strong>Restricted Airspace:</strong></dt>
+        <dd>Aircraft are required to operate above a minimum altitude of 500 ft. unless lifting off or landing and must
+            not operate in restricted airspace. Restricted airspaces are identified on this map:
+            <a href="image/Restricted-Airspace.html">Restricted-Airspace.png (click)</a>
+            Aircraft must land on a designated surface only. Emergency services exempted.
+        </dd>
+
+
+    </dl>
+
+    <h2>Specialty Clauses</h2>
+    <dl class="terms-definitions">
+        <dt><strong>Heinous Clause:</strong></dt>
+        <dd>Extension of jail time for person(s) who commit serial, violent crimes that are extreme in nature or ones
+            that undermine public trust (EMS/PD/DOJ). Any crimes used under this clause are subject to Judge's
+            Discretion for time / fine.</dd>
+        <dt><strong>Repeat Offenders Clause:</strong></dt>
+        <dd>People who are convicted of the same crime three or more times (three incidents) in 30 days are subject to
+            150% time and fine on their 4th (and subsequent) offences.</dd>
+        <dt><strong>Menace Clause:</strong></dt>
+        <dd>People who collect more than 15 felony charges on their record are deemed to consistently cause an undue
+            threat of harm to the public good and may have a warrant issued and be independently tried for lifetime
+            rehabilitative soliatary incarceration</dd>
+        <dt><strong>Endangered Fish Clause:</strong></dt>
+        <dd>Sharks and Dolphins are endangered species and must be released if caught.</dd>
+        <dt><strong>Endangered Animals Clause:</strong></dt>
+        <dd>Mountain Lions, Pumas, and Cougars are endangered species and must not be shot. If shot accidentally, call
+            911 and notify the authorities.</dd>
+    </dl>
+
+    <h2>Offenses Against a Person</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 1001</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>orange</td>
+                <td>Simple Assault</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>A minor attack of either a physical or verbal nature. It is an intentional act done to cause harm or
+                    distress to another.</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 1002</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>orange</td>
+                <td>Assault</td>
+                <td class='hidden'>20</td>
+                <td>20</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The act of inflicting physical harm or unwanted physical contact upon a person </td>
+            </tr>
+            <tr>
+                <td>P.C. 1003</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>red</td>
+                <td>Aggravated Assault </td>
+                <td class='hidden'>25</td>
+                <td>35</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>An assault with the intent to cause grave harm, or rob another person.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1004</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>red</td>
+                <td>Assault with a Deadly Weapon</td>
+                <td class='hidden'>30</td>
+                <td>50</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>An attacker accompanies a physical attack with a physical object capable of inflicting serious
+                    bodily injury</td>
+            </tr>
+            <tr>
+                <td>P.C. 1005 </td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>red</td>
+                <td>Involuntary Manslaughter </td>
+                <td class='hidden'>50</td>
+                <td>60</td>
+                <td class='hidden'>$2,500</td>
+                <td>$2,500</td>
+                <td>The crime of causing grave harm to another human being unlawfully but unintentionally.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1006</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>red</td>
+                <td>Vehicular Manslaughter </td>
+                <td class='hidden'>50</td>
+                <td>100</td>
+                <td class='hidden'>$3,500</td>
+                <td>$3,500</td>
+                <td>The crime of causing grave harm another human being with a motor vehicle unlawfully but
+                    unintentionally. </td>
+            </tr>
+            <tr>
+                <td>P.C. 1007</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>red</td>
+                <td>Attempted Murder</td>
+                <td class='hidden'>40</td>
+                <td>60</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>An individual who tries and fails to commit grave harm to another person.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1008</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>red</td>
+                <td>Attempted Murder of a Public Servant</td>
+                <td class='hidden'>50</td>
+                <td>75</td>
+                <td class='hidden'>$7,000</td>
+                <td>$7,000</td>
+                <td>An individual who tries and fails to commit grave harm to a public servant.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1009</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>red</td>
+                <td>Second Degree Murder</td>
+                <td class='hidden'>60</td>
+                <td>125</td>
+                <td class='hidden'>$6,000</td>
+                <td>$6,000</td>
+                <td>Any type of unlawful killing that is done with malice but without premeditation.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1010</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>11</td>
+                <td class='hidden'>red</td>
+                <td>Second Degree Murder of a Public Servant</td>
+                <td class='hidden'>75</td>
+                <td>150</td>
+                <td class='hidden'>$10,000</td>
+                <td>$10,000</td>
+                <td>Any type of unlawful killing of a public servant that is done with malice but without premeditation
+                </td>
+            </tr>
+            <tr>
+                <td>P.C. 1011</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>12</td>
+                <td class='hidden'>red</td>
+                <td>First Degree Murder </td>
+                <td class='hidden'>HUT</td>
+                <td>300 + COURT</td>
+                <td class='hidden'>$20,000</td>
+                <td>$20,000</td>
+                <td>The intentional killing of another person by someone who has acted willfully, deliberately, or with
+                    planning</td>
+            </tr>
+            <tr>
+                <td>P.C. 1012</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>13</td>
+                <td class='hidden'>red</td>
+                <td>First Degree Murder of a Public Servant</td>
+                <td class='hidden'>HUT</td>
+                <td>300 + COURT</td>
+                <td class='hidden'>$20,000</td>
+                <td>$20,000</td>
+                <td>The intentional killing of a public servant by someone who has acted willfully, deliberately, or
+                    with planning</td>
+            </tr>
+            <tr>
+                <td>P.C. 1013</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>14</td>
+                <td class='hidden'>orange</td>
+                <td>Unlawful Imprisonment</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$3,500</td>
+                <td>$3,500</td>
+                <td>A person intentionally restricts another person’s movement within any area without legal authority,
+                    justification, or the restrained persons permission.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1014</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>15</td>
+                <td class='hidden'>red</td>
+                <td>Kidnapping </td>
+                <td class='hidden'>25</td>
+                <td>30</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>The unlawful confinement of a person against their will, often including transportation</td>
+            </tr>
+            <tr>
+                <td>P.C. 1015</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>16</td>
+                <td class='hidden'>red</td>
+                <td>Attempted Kidnapping</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>An individual who tries and fails to confine of a person against their will, often including
+                    transportation</td>
+            </tr>
+            <tr>
+                <td>P.C. 1016</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>17</td>
+                <td class='hidden'>red</td>
+                <td>Hostage Taking</td>
+                <td class='hidden'>20</td>
+                <td>15</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>The seizing or detention of an individual coupled with a threat to kill, injure or continue to
+                    detain such individual in order to compel a third person or governmental organization to take
+                    action.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1018</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>19</td>
+                <td class='hidden'>orange</td>
+                <td>Reckless Endangerment </td>
+                <td class='hidden'>20</td>
+                <td>10</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>A person behaves in a reckless manner which creates a substantial risk of serious physical injury to
+                    another person</td>
+            </tr>
+            <tr>
+                <td>P.C. 1017</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>18</td>
+                <td class='hidden'>orange</td>
+                <td>Criminal Threats</td>
+                <td class='hidden'>20</td>
+                <td>10</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>When a person threatens to kill or physically harm someone.</td>
+            </tr>
+            <tr>
+                <td>P.C. 1019</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>20</td>
+                <td class='hidden'>red</td>
+                <td>Torture</td>
+                <td class='hidden'>40</td>
+                <td>80</td>
+                <td class='hidden'>$8,000</td>
+                <td>$8,000</td>
+                <td>The action or practice of inflicting severe pain or suffering on someone as a punishment or in order
+                    to force them to do or say something.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Involving Theft</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 2001</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>orange</td>
+                <td>Petty Theft</td>
+                <td class='hidden'>10</td>
+                <td>10</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>A criminal act in which property belonging to another is taken without that persons consent and is
+                    less than $500 in value</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2002</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>orange</td>
+                <td>Grand Theft</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Grand Theft is a specific intent crime meaning that the person taking the property must have had the
+                    exact intent of depriving the victim of the property and its value is more that $500 and less than
+                    $2500</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2003</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>orange</td>
+                <td>Grave Robbery</td>
+                <td class='hidden'>20</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Theft of belongings or body parts from someone who is deceased and burried</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2004</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>orange</td>
+                <td>Looting</td>
+                <td class='hidden'>20</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Theft of belongings from someone who is deceased but not yet burried.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2005 </td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>red</td>
+                <td>Grand Theft Auto - A</td>
+                <td class='hidden'>20</td>
+                <td>25</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>To take someone elses car, without permission and with the intent permanently or significantly to
+                    deprive the owner of it.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2006</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>red</td>
+                <td>Grand Theft Auto - B</td>
+                <td class='hidden'>20</td>
+                <td>35</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>To take a car belonging to a Peace Officer or Public Servant, without permission and with the intent
+                    permanently or significantly to deprive the owner of it.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2007</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>red</td>
+                <td>Carjacking</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>The action of violently stealing an occupied car.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2008</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>orange</td>
+                <td>Burglary</td>
+                <td class='hidden'>20</td>
+                <td>30</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>The act of entering a building or other areas without permission and with the intent of committing a
+                    crime.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2009</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>red</td>
+                <td>Robbery</td>
+                <td class='hidden'>25</td>
+                <td>25</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>To take anything of value by force, threat of force, or by putting the victim in fear</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2010</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>red</td>
+                <td>Institutional Robbery</td>
+                <td class='hidden'>30</td>
+                <td>60</td>
+                <td class='hidden'>$10,000</td>
+                <td>$10,000</td>
+                <td>Armed Robbery of any store or business</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2011</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>11</td>
+                <td class='hidden'>red</td>
+                <td>Attempted Robbery</td>
+                <td class='hidden'>25</td>
+                <td>15</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>An individual who tries and fails to take anything of value by force, threat of force, or by putting
+                    the victim in fear.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2012</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>12</td>
+                <td class='hidden'>red</td>
+                <td>Armed Robbery</td>
+                <td class='hidden'>30</td>
+                <td>50</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>To take anything of value by force, threat of force, or by putting the victim in fear with a lethal
+                    weapon</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2013</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>13</td>
+                <td class='hidden'>red</td>
+                <td>Grand Larceny</td>
+                <td class='hidden'>25</td>
+                <td>45</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>A crime involving the unlawful taking or theft of the personal property of another person or
+                    business in excess of $2500</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2014</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>14</td>
+                <td class='hidden'>green</td>
+                <td>Leaving without Paying</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>An act in which someone leaves a business transaction or physical business without paying the owner
+                    or specified seller</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2015</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>15</td>
+                <td class='hidden'>orange</td>
+                <td>Possession of Non-legal Currency </td>
+                <td class='hidden'>15</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The possession of any illegal currencies such as unmarked bills. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2016</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>16</td>
+                <td class='hidden'>orange</td>
+                <td>Possession of Government issued items</td>
+                <td class='hidden'>20</td>
+                <td>300</td>
+                <td class='hidden'>$20,000</td>
+                <td>$20,000</td>
+                <td>The possession of any government issued items from Public Servants or Peace Officers. Can include:
+                    Evidence bags, PD gear, EMS gear, etc. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2017</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>17</td>
+                <td class='hidden'>orange</td>
+                <td>Possesion of Items used in the Commission of a Crime</td>
+                <td class='hidden'>15</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Possession of any tool, explosive, or other device commonly used in the commission of burglary,
+                    theft or related crime.1 count for each tool carried.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2018</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>18</td>
+                <td class='hidden'>red</td>
+                <td>Sale of Items used in the Commission of a Crime</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>The act of selling any tool(s) commonly used in the commission of burglary, theft, or other crime
+                    (lockpicks, thermite, drills, etc.)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2019</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>19</td>
+                <td class='hidden'>red</td>
+                <td>Theft of an aircraft </td>
+                <td class='hidden'>20</td>
+                <td>15</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>The unlawful use or operation of an aircraft without strict permission from the owner or city. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2020</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>20</td>
+                <td class='hidden'>red</td>
+                <td>ATM Robbery</td>
+                <td class='hidden'>30</td>
+                <td>15</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>The unlawful taking of property from any ATM within the state of Los Santos</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 2021</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>21</td>
+                <td class='hidden'>green</td>
+                <td>Use of Fake License Plate</td>
+                <td class='hidden'>0</td>
+                <td>5</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>Use of a counterfeit or an unlawfully made up/copy of any distinctive number or identification
+                    plate; or It belongs to another motor vehicle model.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Involving Fraud</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 3001 </td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>orange</td>
+                <td>Impersonating </td>
+                <td class='hidden'>20</td>
+                <td>20</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The crime of pretending to be another individual in order to deceive others and gain some advantage.
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3002</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>red</td>
+                <td>Impersonating a Police Officer or Public Servant</td>
+                <td class='hidden'>25</td>
+                <td>40</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>Act of falsely portraying oneself as a Peace Officer or a Public Servant for the purpose of
+                    deception.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3003 </td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>red</td>
+                <td>Impersonating a Judge</td>
+                <td class='hidden'>25</td>
+                <td>50</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>A person who commits criminal impersonation of a false or fictitious identity of a judge</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3004</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>orange</td>
+                <td>Possession of Stolen Identification </td>
+                <td class='hidden'>15</td>
+                <td>10</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>A person who obtains another persons personal identification for the sole purpose of misrepresenting
+                    his or her identity or use as a trophy.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3005 </td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>orange</td>
+                <td>Possession of Stolen Government Identification</td>
+                <td class='hidden'>20</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>A person who obtains identification of a Peace Officer or Public Servant for the sole purpose of
+                    misrepresenting his or her identity or use as a trophy</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3006</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>red</td>
+                <td>Extortion</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$6,000</td>
+                <td>$6,000</td>
+                <td>A person who tries to get something/money through force, threats or blackmail. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3007</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>orange</td>
+                <td>Fraud</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Intentional perversion of truth in order to induce another to part with something of value or to
+                    surrender a legal right</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3008</td>
+                <td class='orange'>Misdemeanor </td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>orange</td>
+                <td>Forgery</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Wrongful or criminal deception intended to result in financial or personal gain.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3009</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>red</td>
+                <td>Money Laundering </td>
+                <td class='hidden'>25</td>
+                <td>50</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>The process of exchanging/moving large amounts of money obtained from crimes, such as drug
+                    trafficking, into origination from a legitimate source</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 3010</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>red</td>
+                <td>Failure to Pay</td>
+                <td class='hidden'>15</td>
+                <td>50</td>
+                <td class='hidden'>3,000</td>
+                <td>$3,000</td>
+                <td>Failure to pay peace officer citations in full within seven days. Funds for this and overdue
+                    citations will be siezed directly from the persons bank account for repayment. 1 overdue invoice = 1
+                    count of this offense. Limit is 14 days from event</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Involving Damage to Property </h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 4001</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>orange</td>
+                <td>Trespassing</td>
+                <td class='hidden'>15</td>
+                <td>10</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>To enter the someone elses land or property without permission.</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 4002</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>red</td>
+                <td>Felony Trespassing</td>
+                <td class='hidden'>25</td>
+                <td>20</td>
+                <td class='hidden'>$1,600</td>
+                <td>$1,600</td>
+                <td>Refusing to leave someone elses land or property after being asked to do so.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 4003</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>red</td>
+                <td>Arson</td>
+                <td class='hidden'>15</td>
+                <td>30</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>The criminal act of deliberately setting fire to property.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 4004</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>green</td>
+                <td>Vandalism</td>
+                <td class='hidden'>15</td>
+                <td>30</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Action involving deliberate destruction of or damage to public or private property.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 4005</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>red</td>
+                <td>Vandalism of Government Property</td>
+                <td class='hidden'>20</td>
+                <td>35</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>Action involving deliberate destruction of or damage to Government owned property.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 4006</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>red</td>
+                <td>Terroristic Threat</td>
+                <td class='hidden'>40</td>
+                <td>50</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Threatens mass destruction using explosives, sickness, or extreme violence with the intent of
+                    causing fear - each time</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 4007</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>red</td>
+                <td>Terrorism</td>
+                <td class='hidden'>HUT</td>
+                <td>300 + COURT</td>
+                <td class='hidden'>$20,000</td>
+                <td>$20,000</td>
+                <td>Causes mass destruction using explosives, sickness, or extreme violence with the intent of causing
+                    fear</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Against Public Administration</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 5001</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>red</td>
+                <td>Bribery</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The offering, giving, receiving, or soliciting of any item of value to influence the actions of an
+                    Government Official</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5002</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>green</td>
+                <td>Anti-Mask Law</td>
+                <td class='hidden'>0</td>
+                <td>5</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>The refusal to remove any given mask instructed by a Peace Officer or Public Servant</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5003</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>red</td>
+                <td>Evading</td>
+                <td class='hidden'>30</td>
+                <td>25</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Flees from a peace officer to avoid being detained, apprehended, or arrested.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5004</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>orange</td>
+                <td>Criminal Possession of Stolen Property</td>
+                <td class='hidden'>30</td>
+                <td>20</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Any property that has been obtained by theft, robbery, or extortion</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5005</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>orange</td>
+                <td>Resisting </td>
+                <td class='hidden'>15</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The act in which a suspect resists apprehention by arrest of a Peace Officer by tackling, punching,
+                    or other immediate means</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5006</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>red</td>
+                <td>Jail Break</td>
+                <td class='hidden'>30</td>
+                <td>50</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>Any act in which one escapes from jail.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5007</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>red</td>
+                <td>Attempted Jail Break</td>
+                <td class='hidden'>20</td>
+                <td>25</td>
+                <td class='hidden'>$2,500</td>
+                <td>$2,500</td>
+                <td>An individual who tries and fails escaping jail, or anyone assisting in the attempt.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5008</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>red</td>
+                <td>Perjury</td>
+                <td class='hidden'>HUT</td>
+                <td>300 + COURT</td>
+                <td class='hidden'>$20,000</td>
+                <td>$20,000</td>
+                <td>The intentional act of swearing a false oath or falsifying an affirmation to tell the truth, whether
+                    spoken or in writing.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5009</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>red</td>
+                <td>Violation of a Restraining Order</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>Any person who doesnt abide by a courts order to stay away, or contact a specific person.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5010</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>red</td>
+                <td>Embezzlement</td>
+                <td class='hidden'>45</td>
+                <td>50</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>The withholding of assets for the purpose of conversion of such assets, by one or more persons to
+                    whom the assets were entrusted, either to be held or to be used for specific purposes</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5011</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>11</td>
+                <td class='hidden'>red</td>
+                <td>Unlawful Practice</td>
+                <td class='hidden'>15</td>
+                <td>30</td>
+                <td class='hidden'>$2,500</td>
+                <td>$2,500</td>
+                <td>To fail or refuse to hire or to discharge any individual or otherwise to discriminate against any
+                    individual.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5012</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>12</td>
+                <td class='hidden'>green</td>
+                <td>Misuse of Emergency Systems</td>
+                <td class='hidden'>20</td>
+                <td>20</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Using systems such as the 911 hotline that isnt any form of emergency</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5013</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>13</td>
+                <td class='hidden'>orange</td>
+                <td>Conspiracy</td>
+                <td class='hidden'>15</td>
+                <td>30</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>A planned or actual action by a group to do something unlawful or harmful.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5014</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>14</td>
+                <td class='hidden'>orange</td>
+                <td>Violating a Court Order</td>
+                <td class='hidden'>HUT</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Failing to obey or respect any given order from the court</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5015</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>15</td>
+                <td class='hidden'>orange</td>
+                <td>Failure to Appear</td>
+                <td class='hidden'>HUT</td>
+                <td>30</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>The act of not appearing to any court summons or hearing.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5016</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>16</td>
+                <td class='hidden'>orange</td>
+                <td>Operating without a permit</td>
+                <td class='hidden'></td>
+                <td>0</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>The illegal act of operation of an activity that requires a valid permit.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5017</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>17</td>
+                <td class='hidden'>red</td>
+                <td>Contempt of Court</td>
+                <td class='hidden'>HUT</td>
+                <td>40</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>The offense of being disobedient to or disrespectful toward a court of law and its officers in the
+                    form of behavior that opposes or defies the authority, justice, and dignity of the court</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5018</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>18</td>
+                <td class='hidden'>red</td>
+                <td>Armed Robbery of Emergency Personnel</td>
+                <td class='hidden'>40</td>
+                <td>50</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>To take anything of value by force, threat of force, from a Peace Officer or EMS Member</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 5019</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>19</td>
+                <td class='hidden'>red</td>
+                <td>Falsifying Goverment Documents</td>
+                <td class='hidden'>30</td>
+                <td>50</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>Possessing or creating any false documents (Government, corporate or private) including but not
+                    limited to ID cards, contracts and license plates.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Against Public Order</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 6001</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>orange</td>
+                <td>Disregarding a Lawful Command</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>Willfully refusing or failing to comply with a lawful order, signal, or direction of any peace
+                    officer. </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6002</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>orange</td>
+                <td>Disorderly Conduct </td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>A person who causes public alarm, nuisance, jeopardy or violence to anyone one person or group
+                    gathering through actions, words or conduct.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6003 </td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>orange</td>
+                <td>Disturbing the Peace</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>An act of violent or noisy behavior that causes a public disturbance and is considered a criminal
+                    offense.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6004</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>orange</td>
+                <td>False Reporting</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>When someone willfully and knowingly give or cause a false report of a crime. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6005</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>orange</td>
+                <td>Harassment </td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>Harassment is any unwanted behavior, physical or verbal that makes a reasonable person feel
+                    uncomfortable, humiliated, or mentally distressed.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6006 </td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>orange</td>
+                <td>Misdemeanor Obstruction of Justice</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>Willfully interfering with the process of justice and law especially by influencing, threatening,
+                    harming, or impeding the process at the given time.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6007</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>red</td>
+                <td>Felony Obstruction of Justice</td>
+                <td class='hidden'>30</td>
+                <td>30</td>
+                <td class='hidden'>$1,600</td>
+                <td>$1,600</td>
+                <td>Anyone aggressively interfering with the process of justice and law by influencing, threatening,
+                    harming, or impeding the process at the given time.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6008</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>red</td>
+                <td>Inciting a Riot</td>
+                <td class='hidden'>25</td>
+                <td>50</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The acts of "organizing, promoting, encouraging, participating in a riot" and urging others to riot.
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6009</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>orange</td>
+                <td>Tampering</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>To interfere with something in order to cause damage or make unauthorized alterations.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6010</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>orange</td>
+                <td>Vehicle Tampering</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>To interfere with a motor vehicle in order to cause damage or make unauthorized alterations.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6011</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>11</td>
+                <td class='hidden'>red</td>
+                <td>Evidence Tampering</td>
+                <td class='hidden'>20</td>
+                <td>30</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>To interfere with any item that could be used in the conviction of any one person in order to cause
+                    damage or make unauthorized alterations</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6012</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>12</td>
+                <td class='hidden'>red</td>
+                <td>Witness Tampering </td>
+                <td class='hidden'>15</td>
+                <td>40</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>The act of attempting to improperly influence, alter or prevent the testimony of witnesses within
+                    criminal or civil proceedings.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6013</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>13</td>
+                <td class='hidden'>orange</td>
+                <td>Failure to Provide Identification</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Any person who knowingly or intentionally refuses to provide any form of identification. (Can be
+                    held for up to 24 hours)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6014</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>14</td>
+                <td class='hidden'>red</td>
+                <td>Vigilantism</td>
+                <td class='hidden'>30</td>
+                <td>40</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>The act of enforcement, investigation or punishment of perceived offenses without legal authority.
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6015</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>15</td>
+                <td class='hidden'>orange</td>
+                <td>Unlawful Assembly</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Any group of people with the mutual intent of deliberate disturbance of the peace.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6016</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>16</td>
+                <td class='hidden'>red</td>
+                <td>Government Corruption</td>
+                <td class='hidden'>40</td>
+                <td>300 + COURT</td>
+                <td class='hidden'>$20,000</td>
+                <td>$20,000</td>
+                <td>The use of powers by government officials or their network contacts for illegitimate private gain.
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6017</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>17</td>
+                <td class='hidden'>red</td>
+                <td>Stalking</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>The act of willfully and repeatedly following or harassing another person in circumstances that
+                    would cause a reasonable person to fear injury or death.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6018</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>18</td>
+                <td class='hidden'>orange</td>
+                <td>Harboring a Fugitive</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>Anyone who knowingly hiding a target of a federal investigation or a wanted criminal from federal
+                    authorities.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 6019</td>
+                <td class=''>Felony </td>
+                <td class='hidden'></td>
+                <td class='hidden'></td>
+                <td>Aiding & Abetting</td>
+                <td class='hidden'></td>
+                <td>25</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Assistance to the commission of a crime knowingly through verbal or physical means.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Against Health & Morals</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 7001 </td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>orange</td>
+                <td>Possession Of Class 1 Substance</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Possession of 0-10 Class 1 Substances</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7002</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>red</td>
+                <td>Possession Of Class 1 Substance With Intent</td>
+                <td class='hidden'>25</td>
+                <td>30</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>Possession of 11 or more Class 1 Substances</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7003</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>orange</td>
+                <td>Possession Of Class 2 Substance</td>
+                <td class='hidden'>10</td>
+                <td>30</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>Possession of 5 or fewer Class 2 Substances</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7004</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>red</td>
+                <td>Possession of Class 2 Substance With Intent</td>
+                <td class='hidden'>30</td>
+                <td>40</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>Possession of 6 or more Class 2 Substances</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7005</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>orange</td>
+                <td>Sale of Controlled Substance</td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>The act of selling, offering, or transporting any controlled substance without the proper license or
+                    permit.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7006</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>red</td>
+                <td>Manufacture of Controlled Substance</td>
+                <td class='hidden'>50</td>
+                <td>40</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>Any act to manufacture, convert, produce, obtain, process or prepare a controlled substance by
+                    chemical extraction or chemical synthesis</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7007</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>red</td>
+                <td>Drug Trafficking</td>
+                <td class='hidden'>30</td>
+                <td>60</td>
+                <td class='hidden'>$6,000</td>
+                <td>$6,000</td>
+                <td>Possession of 20 or more controlled substances OR any substances found in the form of a brick or
+                    package. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7008</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>red</td>
+                <td>Desecration of a Human Corpse</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>Any act committed after the death of a human being including, but not limited to, dismemberment,
+                    disfigurement, mutilation, burning, or any act committed to the dead body other than interment</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7009</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>green</td>
+                <td>Public Intoxication</td>
+                <td class='hidden'>0</td>
+                <td>10</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>Someone visibly under the influence of drugs or alcoholic beverages in public.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7010</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>orange</td>
+                <td>Public Indecency</td>
+                <td class='hidden'>15</td>
+                <td>10</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>Public indecency is the intentional exposure of ones private parts in public.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 7009</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>11</td>
+                <td class='hidden'>red</td>
+                <td>Malpractice</td>
+                <td class='hidden'>HUT</td>
+                <td>300 + COURT</td>
+                <td class='hidden'>$20,000</td>
+                <td>$20,000</td>
+                <td>Improper, illegal, or negligent professional activity or treatment, especially by a medical
+                    practitioner, lawyer, or public servant.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Against Public Safety</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 8001</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Possession of Weapon Class 1 </td>
+                <td class='hidden'>10</td>
+                <td>15</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Possession of any single fired weapons (Non-Automatic) with or without attachments</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8002</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Possession of Weapon Class 2</td>
+                <td class='hidden'>25</td>
+                <td>35</td>
+                <td class='hidden'>$2,500</td>
+                <td>$2,500</td>
+                <td>Possession of any highly powered single fired weapons (Non-Automatic) with or without attachments
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8003</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Possession of Weapon Class 3</td>
+                <td class='hidden'>35</td>
+                <td>300</td>
+                <td class='hidden'>$30,000</td>
+                <td>$30,000</td>
+                <td>Possession of any automatically fired weapons, Shotguns, Sniper Rifles, or Explosives - with or
+                    without attachments</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8004</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Sale of a Weapon Class 1</td>
+                <td class='hidden'>25</td>
+                <td>20</td>
+                <td class='hidden'>$2,000</td>
+                <td>$2,000</td>
+                <td>Possession of 4 or more, or sale of weapons that fall under the Class 1 category (Per every 4,
+                    stackable)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8005</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Sale of a Weapon Class 2</td>
+                <td class='hidden'>40</td>
+                <td>30</td>
+                <td class='hidden'>$3,000</td>
+                <td>$3,000</td>
+                <td>Possession of 4 or more, or sale of weapons that fall under the Class 2 category (Per every 4,
+                    stackable)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8006</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Sale of a Weapon Class 3</td>
+                <td class='hidden'>HUT</td>
+                <td>300</td>
+                <td class='hidden'>$4,000</td>
+                <td>$4,000</td>
+                <td>Possession of 4 or more, or sale of weapons that fall under the Class 3 category (Per every 4,
+                    stackable)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8007</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>orange</td>
+                <td>Weapons Discharge Violation</td>
+                <td class='hidden'>10</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Discharging any weapon or replica within the state with no given reason or thought to public safety
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8008</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>orange</td>
+                <td>Possession of Weapon Attachments</td>
+                <td class='hidden'>15</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Possession of any weapon attachments (Scope, Extended Magazine, Flashlight, Suppressor). This is per
+                    item (stackable)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8009</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>orange</td>
+                <td>Possession of Criminal Tools</td>
+                <td class='hidden'></td>
+                <td>10</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>Posession of items used in the commision of a crime (Drills, Lockpicks, Advanced Lockpicks, Green
+                    keys, Red Keys, Blue Keys, Hammers). 1 count for each type of item carried regardless of quantity.
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8010</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>red</td>
+                <td>Possession of Illegal Items</td>
+                <td class='hidden'></td>
+                <td>10</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>Posession of illegal items (Thermite, Hacking Devices, Black USB Drives, Headbags, Big Package,
+                    Medium Package, Small Package, Gruppe Card, Fake Plates, Gatecracks, Illegal Tablets, Black Card,
+                    Electronic Kit)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8011</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>11</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Discharge of a Licensed Firearm</td>
+                <td class='hidden'>15</td>
+                <td>25</td>
+                <td class='hidden'>$2,500</td>
+                <td>$2,500</td>
+                <td>Discharging a licensed class 1 firearm in the commission of a crime. Does not stack with Type 1
+                    charges (Offenses against a person)</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8012</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>12</td>
+                <td class='hidden'>red</td>
+                <td>Weapon Trafficking</td>
+                <td class='hidden'>40</td>
+                <td>60</td>
+                <td class='hidden'>$10,000</td>
+                <td>$10,000</td>
+                <td>Possession of 3 or more class 1, 2, or 3 weapons.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8013</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>13</td>
+                <td class='hidden'>orange</td>
+                <td>Brandishing a Weapon</td>
+                <td class='hidden'>20</td>
+                <td>15</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>Aim or wave a weapon an object that could be used as a weapon as a threat, in anger, or excitement.
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8014</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>14</td>
+                <td class='hidden'>red</td>
+                <td>Insurrection</td>
+                <td class='hidden'>30</td>
+                <td>20</td>
+                <td class='hidden'>$10,000</td>
+                <td>$10,000</td>
+                <td>A violent uprising against an authority or government.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8015</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>15</td>
+                <td class='hidden'>red</td>
+                <td>Restricted Airspace Violation</td>
+                <td class='hidden'>20</td>
+                <td>20</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>Operation of an aircraft in restricted airspace (reference definitions) which includes non-emergency
+                    landings on surfaces other than helipads or runways within city limits.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8016</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>16</td>
+                <td class='hidden'>green</td>
+                <td>Jaywalking</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>To cross or walk in the street or road unlawfully or without regard for approaching traffic</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 8017</td>
+                <td class='red'>Felony</td>
+                <td class='hidden'>17</td>
+                <td class='hidden'>red</td>
+                <td>Criminal Use of Explosives</td>
+                <td class='hidden'>30</td>
+                <td>35</td>
+                <td class='hidden'>$3,500</td>
+                <td>$3,500</td>
+                <td>Any explosives used in the aid of a crime or its fullfilment. </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Involving the Operation of Vehicle</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 9001 </td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>orange</td>
+                <td>Driving While Intoxicated</td>
+                <td class='hidden'>0</td>
+                <td>10</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>The offense of driving, operating, or being in control of a vehicle while impaired by alcohol or
+                    drugs.</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9002</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>red</td>
+                <td>Reckless Evading</td>
+                <td class='hidden'>40</td>
+                <td>35</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Flees from a peace officer with blatant disregard for civilian life. Fleeing in a “reckless” manner.
+                </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9003</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>green</td>
+                <td>Failure to Yield to Emergency Vehicle</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>Anyone who fails to yield or stop their vehicle for any emergency vehicle that has their lights and
+                    sirens on. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9004</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>green</td>
+                <td>Impeding Traffic Flow</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>A person drives a motor vehicle at such a slow speed as to impede the normal and reasonable movement
+                    of traffic</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9005</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>green</td>
+                <td>Nonfunctional Vehicle</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Anyone who uses a non-functional vehicle to impede the flow of traffic</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9006</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>green</td>
+                <td>Negligent Driving</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The driver failed to fulfill their duty to exercise reasonable care for the safety of others on the
+                    road.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9007</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>orange</td>
+                <td>Reckless Driving</td>
+                <td class='hidden'>15</td>
+                <td>15</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Any person who drives with disregard for others safety and understand the risks of their behaviors,
+                    but drive recklessly anyway</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9008</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>red</td>
+                <td>Felony Speeding (41+ mph above posted limit)</td>
+                <td class='hidden'>20</td>
+                <td>15</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Anyone who drives 41+ mph over the speed limit. Revoke Drivers License.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9009</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>green</td>
+                <td>Second Degree Speeding (25-40 mph above limit)</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$800</td>
+                <td>$800</td>
+                <td>Anyone who drives 25-40 mph over the speed limit. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9010</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>10</td>
+                <td class='hidden'>green</td>
+                <td>Speeding (10-24 mph above limit)</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$500</td>
+                <td>$500</td>
+                <td>Anyone who drives 10-24+ mph over the speed limit. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9011</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>11</td>
+                <td class='hidden'>green</td>
+                <td>Unlicensed Operation of a Vehicle</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$750</td>
+                <td>$750</td>
+                <td>Anyone who has had their license suspended or revoked found operating a motor vehicle. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9012</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>12</td>
+                <td class='hidden'>green</td>
+                <td>Illegal U-Turn</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>When someone makes a u-turn without regard to public safety.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9013</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>13</td>
+                <td class='hidden'>green</td>
+                <td>Illegal Passing</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Passing on the right on a non-multi lane road or passing on the shoulder of a roadway.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9014</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>14</td>
+                <td class='hidden'>green</td>
+                <td>Failure to Maintain Lane</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>A driver who fails to remain within their designated lane without crossing over or touching the
+                    lines.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9015</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>15</td>
+                <td class='hidden'>green</td>
+                <td>Failure to Obey Traffic Signal</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Failure to treat a red light as a four-way stop</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9016</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>16</td>
+                <td class='hidden'>green</td>
+                <td>Illegal Turn</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>An illegal turn when a driver turns in a manner that is considered unsafe. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9017</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>17</td>
+                <td class='hidden'>green</td>
+                <td>Failure to Stop</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Failure to stop motor vehicle when signaled by law-enforcement vehicle.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9018</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>18</td>
+                <td class='hidden'>green</td>
+                <td>Excessive Vehicle Noise</td>
+                <td class='hidden'></td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Use of a vehicle in such a way to cause a disturbance to the peace, such as through excessive horn
+                    use, revving of the engine, or through lack of use of a muffler device.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9019</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>19</td>
+                <td class='hidden'>green</td>
+                <td>Unauthorized Parking</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Unauthorized parking means the parking of a vehicle in a parking lot without the consent of the
+                    owner or operator of the parking lot.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9020</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>20</td>
+                <td class='hidden'>orange</td>
+                <td>Hit & Run </td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>A hit and run is the act of causing a traffic collision and not stopping afterwards.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9021</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>21</td>
+                <td class='hidden'>green</td>
+                <td>Driving without Headlights or Signals</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Any driver that doesnt have headlights on during evening hours.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9022</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>22</td>
+                <td class='hidden'>red</td>
+                <td>Street Racing</td>
+                <td class='hidden'>20</td>
+                <td>30</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Any unsanctioned form of auto racing that occurs on a public road.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9023</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>23</td>
+                <td class='hidden'>red</td>
+                <td>Piloting without Proper Licensing </td>
+                <td class='hidden'>20</td>
+                <td>15</td>
+                <td class='hidden'>$1,500</td>
+                <td>$1,500</td>
+                <td>Anyone operating an aircraft or helicopter without the proper licensing. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 9024</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>24</td>
+                <td class='hidden'>orange</td>
+                <td>Unlawful use of a Motorvehicle </td>
+                <td class='hidden'>15</td>
+                <td>20</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Anyone operating a motor vehicle without the consent of the owner. </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>Offenses Involving the Well-Being of Wildlife</h2>
+    <table class='offenses'>
+        <thead>
+            <tr>
+                <td>P.C. 10001</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>1</td>
+                <td class='hidden'>green</td>
+                <td>Hunting in Restricted Areas</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$750</td>
+                <td>$750</td>
+                <td>Hunting in any areas not specified by the State. </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10002</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>2</td>
+                <td class='hidden'>green</td>
+                <td>Unlicensed Hunting or Fishing</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$750</td>
+                <td>$750</td>
+                <td>Hunting or Fishing without the proper license to do so in any given area. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10003</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>3</td>
+                <td class='hidden'>orange</td>
+                <td>Animal Cruelty</td>
+                <td class='hidden'>10</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>The infliction by omission or by commission by humans of suffering or harm upon any animal.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10004</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>4</td>
+                <td class='hidden'>orange</td>
+                <td>Hunting with a Non Hunting Weapon</td>
+                <td class='hidden'>10</td>
+                <td>20</td>
+                <td class='hidden'>$2,500</td>
+                <td>$2,500</td>
+                <td>Hunting with any weapon not issued by the State. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10005</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>5</td>
+                <td class='hidden'>green</td>
+                <td>Hunting Outside of Designated Hours</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$250</td>
+                <td>$250</td>
+                <td>Hunting outside of hours specified by the State. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10006</td>
+                <td class='orange'>Misdemeanor</td>
+                <td class='hidden'>6</td>
+                <td class='hidden'>orange</td>
+                <td>Overhunting</td>
+                <td class='hidden'>10</td>
+                <td>20</td>
+                <td class='hidden'>$2,500</td>
+                <td>$2,500</td>
+                <td>To hunt animals to an excessive and usually harmful degree.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10007</td>
+                <td class='red'>Felony </td>
+                <td class='hidden'>7</td>
+                <td class='hidden'>red</td>
+                <td>Poaching</td>
+                <td class='hidden'>20</td>
+                <td>40</td>
+                <td class='hidden'>$5,000</td>
+                <td>$5,000</td>
+                <td>The illegal hunting or capturing of wild animals.</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10008</td>
+                <td class='green'>Infraction</td>
+                <td class='hidden'>8</td>
+                <td class='hidden'>green</td>
+                <td>Illegal Fishing</td>
+                <td class='hidden'>0</td>
+                <td>0</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>Any one person found with illegal fish in their possession. </td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>P.C. 10009</td>
+                <td class='green'>Misdemeanor</td>
+                <td class='hidden'>9</td>
+                <td class='hidden'>green</td>
+                <td>Dumping</td>
+                <td class='hidden'>10</td>
+                <td>10</td>
+                <td class='hidden'>$1,000</td>
+                <td>$1,000</td>
+                <td>To deposit or dispose of garbage, waste, or unwanted material, typically in a careless or hurried
+                    way.</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
 </body>
+
 </html>
