@@ -75,16 +75,19 @@ footer {
 
 .fullimg {
     width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 .halfimg {
     width: 50%;
+    height: auto;
     object-fit: cover;
 }
 
 .quarterimg {
     width: 25%vw;
+    height: auto;
     object-fit: cover;
 }
 
