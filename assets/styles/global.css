@@ -16,6 +16,11 @@ body {
     padding: 20px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -69,17 +74,17 @@ footer {
 
 
 .fullimg {
-    width: 98vw;
+    width: 100%;
     object-fit: cover;
 }
 
 .halfimg {
-    width: 50vw;
+    width: 50%;
     object-fit: cover;
 }
 
 .quarterimg {
-    width: 25vw;
+    width: 25%vw;
     object-fit: cover;
 }
 
