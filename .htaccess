@@ -1,2 +1,2 @@
 RewriteEngine On
-ErrorDocument 404 /main/error/404.html
+RewriteRule ^$ /main/index.html [L]
