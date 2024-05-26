@@ -7,8 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #333; /* default text color */
-    font-size: 1rem; /* default font size */
+    color: #333;
+    /* default text color */
+    font-size: 1rem;
+    /* default font size */
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* Container Styles */
@@ -19,6 +25,15 @@ body {
 .center {
     display: flex;
     justify-content: center;
+}
+
+.pagehead {
+    font-size: 25px;
+    margin: -35px;
+    display: flex;
+    /* Use flexbox to align */
+    justify-content: center;
+    /* Center horizontally */
 }
 
 header {
@@ -33,15 +48,35 @@ header {
     /* Center items vertically */
 }
 
-.pagehead {
-    font-size: 25px;
-    margin: -35px;
+.header-main {
     display: flex;
-    /* Use flexbox to align */
-    justify-content: center;
-    /* Center horizontally */
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
 }
 
+.header-main .top-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    width: 100%;
+}
+
+.header-main .top-section .logo-container {
+    margin-right: 20px; /* Adjust this value as needed */
+}
+
+.header-main .top-section .pagehead {
+    margin-right: 0px;
+}
+
+.header-main nav ul {
+    justify-content: center;
+}
 
 nav ul {
     list-style-type: none;
