@@ -73,7 +73,6 @@ header {
     position: static;
     top: 0;
     transform: translateY(17px) translateX(30px);
-    z-index: 2;
 }
 
 
