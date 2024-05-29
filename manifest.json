@@ -6,7 +6,7 @@
     "lang": "en",
     "icons": [
         {
-            "src": "../assets/images/logo.png",
+            "src": "./assets/images/logo.png",
             "sizes": "any",
             "type": "image/svg+xml"
         }
